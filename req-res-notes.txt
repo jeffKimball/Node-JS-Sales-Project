@@ -1,0 +1,14 @@
+req Properties:
+req.url or req.originalUrl: Gets the URL of the request.
+req.method: The HTTP method used for the request (GET, POST, etc.).
+req.headers: An object containing the request headers.
+req.body: Contains data submitted in the request body (you need middleware like express.json() or express.urlencoded() to parse the body first).
+req.params: An object containing properties mapped to the named route “parameters”.
+req.query: An object containing a property for each query string parameter in the route.
+
+res Methods:
+res.send(data): Sends a response of various types back to the client.
+res.status(code): Sets the HTTP status code for the response.
+res.json(data): Sends a JSON response.
+res.end(): Ends the response process without any data.
+res.sendFile(path): Sends a file as an octet stream.
